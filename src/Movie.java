@@ -72,6 +72,8 @@ public class Movie {
         isMovieBlockBuster = movieBlockBuster;
     }
 
+
+    //randomly result generated at the very first time, after that it will show the same result.
     public Boolean isMovieBlockBuster() {
         if (isMovieBlockBuster == null) {
             if (Math.random() < 0.5)

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class BookMovie {
 
@@ -7,6 +9,8 @@ public class BookMovie {
         BookMovie bookMovie = new BookMovie();
         bookMovie.initializeMovieLists();
         bookMovie.getMovieCount();
+
+
         System.out.println(bookMovie.getFreeFoodOnMovie(new Movie(MovieType.HOLLYWOOD)));
 
     }
@@ -17,6 +21,7 @@ public class BookMovie {
     }
 
     private void initializeMovieLists() {
+
         Movies movies = Movies.getInstance();
         movies.addMovie(new Movie(MovieType.BOLLYWOOD));
         movies.addMovie(new Movie(MovieType.BOLLYWOOD));

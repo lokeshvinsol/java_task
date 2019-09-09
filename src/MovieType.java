@@ -1,4 +1,5 @@
 public enum MovieType {
+    //Fixed movie type so that all the movie can be stored in one of this type.
     TOLLYWOOD("Dosa"), BOLLYWOOD("Dal Makhani"), HOLLYWOOD("Pepper Steak");
 
     private String mFreeFoodDish;
@@ -12,7 +13,11 @@ public enum MovieType {
         return mFreeFoodDish;
     }
 
-    public double getAverageCostOfProduction(){
+    public double getAverageCostOfProduction() {
         return mAverageCostOfProduction;
+    }
+
+    public void setAverageCostOfProduction(double mAverageCostOfProduction) {
+        this.mAverageCostOfProduction = mAverageCostOfProduction;
     }
 }
